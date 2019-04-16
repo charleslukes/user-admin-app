@@ -16,4 +16,4 @@ const admin = new Admin('Uche');
 //console.log(admin.readAll());
 //console.log(Admin.prototype.readById(0))
 //console.log(DB);
-module.exports = Admin;
+module.exports = admin;
