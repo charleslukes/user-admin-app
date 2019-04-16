@@ -30,7 +30,7 @@ createUser.prototype.readById = function(id){
     }
 }
 
-//Read all user
+//
 
 const user = new createUser('Charles', 'Chiakwa', 'Enugu');
 

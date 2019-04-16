@@ -35,6 +35,6 @@ describe('Read user function by ID', () => {
         expect(user.readById(0)).toEqual({name: 'Charles', surname: 'Chiakwa', state: 'Enugu'})
     });
     it('It should return invalid for unknown ID', () => {
-        expect(user.readById('vv')).toBe('Invalid User Id');
+        expect(user.readById('vv')).toBe('Invalid User Id'); 
     })
 })
