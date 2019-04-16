@@ -14,3 +14,5 @@ Admin.prototype.readAll = function(){
 const admin = new Admin('Uche');
 console.log(admin.readAll());
 //console.log(DB);
+
+module.exports = Admin;
