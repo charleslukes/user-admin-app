@@ -1,7 +1,7 @@
 
 //Defining the user database
 
-const DB = [];
+const DB = require('./DB');
 
 //Creating the user constructor 
 function createUser(name, surname, state){
