@@ -22,7 +22,12 @@ function createUser(name, surname, state){
 
 //Read the single user by ID
 createUser.prototype.readById = function(id){
-    return DB[id];
+    if(typeof id === 'number'){
+        return DB[id];
+    }
+    else{
+        return 'Invalid User Id';
+    }
 }
 
 const user = new createUser('Charles', 'Chiakwa', 'Enugu');

@@ -33,5 +33,8 @@ describe('Create user function ', () => {
 describe('Read user function by ID', () => {
     it('It should return the object of the user', () => {
         expect(user.readById(0)).toEqual({name: 'Charles', surname: 'Chiakwa', state: 'Enugu'})
+    });
+    it('It should return invalid for unknown ID', () => {
+        expect(user.readById('vv')).toBe('Invalid User Id');
     })
 })
