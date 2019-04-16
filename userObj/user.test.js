@@ -40,5 +40,7 @@ describe('Read user function by ID', () => {
 })
 
 describe('Update user in the DB', () => {
-   / it('Should ')
+    it('Should return an object of new values', () => {
+        expect(user.updateUser(0, 'Joe', 'Vic', 'Imo')).toEqual(DB[0])
+    })
 })

@@ -36,6 +36,8 @@ createUser.prototype.updateUser = function(id, name, surname, state){
         DB[id].name = name;
         DB[id].surname = surname;
         DB[id].state = state;
+
+        return DB[id];
     }
 }
 
