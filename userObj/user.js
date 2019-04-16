@@ -30,7 +30,16 @@ createUser.prototype.readById = function(id){
     }
 }
 
-//
+//Update details of a user upadate
+createUser.prototype.updateUser = function(id, name, surname, state){
+    if(typeof name === 'string' && typeof surname === 'string' && typeof state === 'string'){
+        DB[id].name = name;
+        DB[id].surname = surname;
+        DB[id].state = state;
+    }
+}
+
+
 
 const user = new createUser('Charles', 'Chiakwa', 'Enugu');
 

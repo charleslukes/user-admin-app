@@ -38,3 +38,7 @@ describe('Read user function by ID', () => {
         expect(user.readById('vv')).toBe('Invalid User Id'); 
     })
 })
+
+describe('Update user in the DB', () => {
+   / it('Should ')
+})
