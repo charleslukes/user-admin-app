@@ -36,11 +36,17 @@ describe('Read user function by ID', () => {
     });
     it('It should return invalid for unknown ID', () => {
         expect(user.readById('vv')).toBe('Invalid User Id'); 
-    })
+    });
 })
 
 describe('Update user in the DB', () => {
     it('Should return an object of new values', () => {
         expect(user.updateUser(0, 'Joe', 'Vic', 'Imo')).toEqual(DB[0])
-    })
+    });
+    it('Should return undefined', () => {
+        expect(user.updateUser(0, true, 'Vic', 'Imo')).toBeUndefined();
+    });
+    it('Should return undefined', () => {
+        expect(user.updateUser(0, 'true', NaN, 'Imo')).toBeUndefined();
+    });
 })
