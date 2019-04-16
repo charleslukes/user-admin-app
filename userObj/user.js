@@ -42,7 +42,13 @@ createUser.prototype.updateUser = function(id, name, surname, state){
 }
 
 //Search a user by name 
-//createUser.prototype.searchUser
+createUser.prototype.searchUser = function(name){
+    for (let i = 0; i < DB.length; i++) {
+        if(name === DB[i].name){
+            return DB[i]
+        } 
+    }
+}
 
 
 
