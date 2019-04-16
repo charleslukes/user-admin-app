@@ -1,0 +1,14 @@
+{
+  "name": "charles",
+  "version": "1.0.0",
+  "description": "project on oop",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "author": "charles chiakwa",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.7.1"
+  }
+}
