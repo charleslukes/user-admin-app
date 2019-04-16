@@ -44,6 +44,7 @@ createUser.prototype.updateUser = function(id, name, surname, state){
 
 
 const user = new createUser('Charles', 'Chiakwa', 'Enugu');
+const user1 = new createUser('Mark', 'Bashir', 'Borno');
 
 module.exports = {
     DB: DB,
