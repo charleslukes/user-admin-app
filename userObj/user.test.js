@@ -27,5 +27,11 @@ describe('Create user function ', () => {
         expect(userTest.name).toBeUndefined();
         expect(userTest.surname).toBeUndefined();
         expect(userTest.state).toBeUndefined();
+    });
+})
+
+describe('Read user function by ID', () => {
+    it('It should return the object of the user', () => {
+        expect(user.readById(0)).toEqual({name: 'Charles', surname: 'Chiakwa', state: 'Enugu'})
     })
 })
