@@ -19,5 +19,11 @@ describe('Admin test to delete a user', () => {
     });
     it('Should return invalid for wrong input', () => {
         expect(admin.delUser('xyz')).toBe('Invalid input')
-    })
+    });
 }) 
+
+describe('Admin test to delete all users', () => {
+    it('Should delete all users', () => {
+        expect(admin.delAll()).toEqual([]);
+    })
+})

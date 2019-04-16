@@ -24,10 +24,16 @@ Admin.prototype.delUser = function(id){
     }
 }
 
+//Delete all user
+Admin.prototype.delAll = function(){
+     DB.splice(0, DB.length);
+     return DB;
+}
+
 
 const admin = new Admin('Uche');
 //console.log(admin.readAll());
 //console.log(Admin.prototype.readById(0))
-console.log(admin.delUser(1))
+//admin.delAll()
 console.log(DB);
 module.exports = admin;

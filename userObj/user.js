@@ -41,6 +41,9 @@ createUser.prototype.updateUser = function(id, name, surname, state){
     }
 }
 
+//Search a user by name 
+//createUser.prototype.searchUser
+
 
 
 const user = new createUser('Charles', 'Chiakwa', 'Enugu');
