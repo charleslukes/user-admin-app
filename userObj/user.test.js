@@ -50,3 +50,12 @@ describe('Update user in the DB', () => {
         expect(user.updateUser(0, 'true', NaN, 'Imo')).toBeUndefined();
     });
 })
+
+describe('Search user by name in the DB', () => {
+    it('Should return the object of the searched name', () => {
+        expect(user.searchUser('Mark')).toEqual(DB[1]);
+    });
+    it('Should return invalid for wrong names', () => {
+        expect(user.searchUser('March')).toBeUndefined();
+    })
+})

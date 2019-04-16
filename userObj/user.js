@@ -5,7 +5,7 @@ const DB = require('./DB');
 
 //Creating the user constructor 
 function createUser(name, surname, state){
-    if(typeof name === 'string' && typeof surname === 'string' && typeof state === 'string'){
+ if(typeof name === 'string' && typeof surname === 'string' && typeof state === 'string'){
     this.name = name;
     this.surname = surname;
     this.state = state;
@@ -43,11 +43,13 @@ createUser.prototype.updateUser = function(id, name, surname, state){
 
 //Search a user by name 
 createUser.prototype.searchUser = function(name){
-    for (let i = 0; i < DB.length; i++) {
-        if(name === DB[i].name){
-            return DB[i]
-        } 
-    }
+    if(typeof name === 'string'){
+        for (let i = 0; i < DB.length; i++) {
+            if(name === DB[i].name){
+                return DB[i]
+            }
+        }
+  } 
 }
 
 
