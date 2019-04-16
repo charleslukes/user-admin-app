@@ -32,8 +32,5 @@ Admin.prototype.delAll = function(){
 
 
 const admin = new Admin('Uche');
-//console.log(admin.readAll());
-//console.log(Admin.prototype.readById(0))
-//admin.delAll()
-console.log(DB);
+
 module.exports = admin;

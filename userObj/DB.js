@@ -1,5 +1,3 @@
-const DB = [
-
-];
+const DB = []
 
 module.exports = DB;

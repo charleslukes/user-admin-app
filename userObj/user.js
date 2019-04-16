@@ -5,7 +5,7 @@ const DB = require('./DB');
 
 //Creating the user constructor 
 function createUser(name, surname, state){
- if(typeof name === 'string' && typeof surname === 'string' && typeof state === 'string'){
+    if(typeof name === 'string' && typeof surname === 'string' && typeof state === 'string'){
     this.name = name;
     this.surname = surname;
     this.state = state;
